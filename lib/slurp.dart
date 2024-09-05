@@ -41,7 +41,7 @@ class _SlurpState extends State<Slurp>{
                 
             children: [
               SizedBox(
-                height: 12.4,
+                height: 18,
               ),
 
               Text("SLURP",style: TextStyle(fontSize: 26, fontFamily: "Bungee-Regular",  color: Color(0xffF1F2E9), fontWeight: FontWeight.bold ),
@@ -74,7 +74,7 @@ class _SlurpState extends State<Slurp>{
         
       Container(
         width: double.infinity,
-        height: 252,
+        height: 255,
         color: const Color(0xffF1F2E9),
 
         child: Column(
@@ -97,9 +97,8 @@ class _SlurpState extends State<Slurp>{
             Row(
              mainAxisAlignment: MainAxisAlignment.center,
             children: [
-
-               SizedBox(
-                    height: 165,
+              Expanded(child:  SizedBox(
+                    height: 164,
                     width: 120,
                     child: FloatingActionButton(onPressed:(){
                           Navigator.push(context, MaterialPageRoute(builder: (context) =>  const whyslurp(),));
@@ -130,14 +129,16 @@ class _SlurpState extends State<Slurp>{
 
     ),
                       
- ),),
+ ),),),
                       
             const SizedBox(
-                   width: 16.35,    ),
+                width: 11,    ),
                     
+
+            Expanded(child:         
             SizedBox(
                width: 120,
-               height: 165,
+               height: 164,
                child: FloatingActionButton(onPressed: (){
                       Navigator.push(context, MaterialPageRoute(builder: (context) =>  const Endlesscoffee(),));
                       },
@@ -165,15 +166,16 @@ class _SlurpState extends State<Slurp>{
 
                       
                        ),
-                     ),),
+                     ),),),
 
         const SizedBox(
-             width: 16.25,
+             width: 11,
               ),
 
+       Expanded(child: 
        SizedBox(
         width: 120,
-        height: 165,
+        height: 164,
         child: FloatingActionButton(onPressed: (){
                Navigator.push(context, MaterialPageRoute(builder: (context) =>  const orderClass(),));
            },
@@ -199,7 +201,7 @@ class _SlurpState extends State<Slurp>{
                           
                         ],
                        ),
-                     )),
+                     )),),
 
                   ],
                  )  
@@ -210,7 +212,7 @@ class _SlurpState extends State<Slurp>{
 
       Container(
            width: double.infinity,
-           height: 522,
+           height: 525,
 
            decoration: const BoxDecoration(
               image: DecorationImage(image: AssetImage("lib\\assests\\images\\Container 3.png"),

@@ -33,7 +33,7 @@ class whyslurp extends StatelessWidget{
            backgroundColor: const Color(0xff1ABB9C),
       ),
 
-      body: SingleChildScrollView(
+      body: Expanded(
 
         child: Container(
         width: double.infinity,
@@ -42,12 +42,12 @@ class whyslurp extends StatelessWidget{
           
         child: Column(
           children: [
-               Padding(padding: const EdgeInsets.only(top: 40.0, bottom: 10.0, right: 30.0, left: 30.0), 
-                       child:  Image.asset('lib\\assests\\images\\twocup.jpg.png'),    
+               Padding(padding: const EdgeInsets.only(top: 30.0, bottom: 10.0, right: 30.0, left: 30.0), 
+                       child:  Image.asset('lib\\assests\\images\\twocup.jpg.png', height: 170,),    
                  ),
 
                   
-               const Padding(padding: EdgeInsets.only(right: 40.0, left: 40.0),
+               const Padding(padding: EdgeInsets.only(right: 35.0, left: 35.0),
                      child: Text("Coffee is a cherished beverage enjoyed by millions worldwide, and its importance goes beyond just being a morning ritual. It serves as a vital source of energy, providing a much-needed boost to start the day.\n\n"
                                "The caffeine in coffee stimulates the central nervous system, enhancing alertness, concentration, and overall cognitive function. ",
                              style: TextStyle(fontFamily: "Poppins-Regular", color: Color(0xff000000), fontSize: 20.58),)

@@ -30,9 +30,9 @@ class Endlesscoffee extends StatelessWidget {
          backgroundColor: const Color(0xff1ABB9C),
          ),
 
-       body: SingleChildScrollView(
-
-        child: Container(
+       body: Expanded(
+        
+        child:  Container(
         width: double.infinity,
         height: double.infinity,
         color: const Color(0xffF1F2E9),
@@ -40,11 +40,11 @@ class Endlesscoffee extends StatelessWidget {
         child: Column(
           children: [
            
-            Padding(padding: const EdgeInsets.only(top: 40.0, bottom: 10.0, right: 30.0, left: 30.0), 
-                       child:  Image.asset('lib\\assests\\images\\machine.png'),    
+            Padding(padding: const EdgeInsets.only(top: 30.0, bottom: 10.0, right: 30.0, left: 30.0), 
+                       child:  Image.asset('lib\\assests\\images\\machine.png', height: 160,),    
             ),
 
-            const Padding(padding: EdgeInsets.only(right: 40.0, left: 40.0),
+            const Padding(padding: EdgeInsets.only(right: 35.0, left: 35.0),
                   child: Text("The caffeine in coffee stimulates the central nervous system, enhancing alertness, concentration, and overall cognitive function. Additionally, coffee has social significance, often serving as a focal point for gatherings and conversations. Its rich aroma and diverse flavors offer a comforting experience, making it a favorite choice for relaxation and enjoyment. Whether for productivity or pleasure, coffee holds a special place in daily life.",
                          style: TextStyle(fontFamily: "Poppins-Regular", color: Color(0xff000000), fontSize: 20.58),)
              )
